@@ -2,6 +2,10 @@
 
 int main()
 {
-    printf("Hello World\n");
-    return 0;
+    static int a = 5;
+
+    if(--a){
+        main();
+        printf("%d ", a);
+    }
 }
