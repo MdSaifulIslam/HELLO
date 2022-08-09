@@ -6,11 +6,11 @@ int rev(int x)
 {
     if (x >= 10)
     {
-        rev(x%10);
-         rev(x / 10);
+        rev(x % 10);
+        rev(x / 10);
     }
-    
-    sum = sum*10 + x;
+    else
+        sum = sum * 10 + x;
     return sum;
 }
 
